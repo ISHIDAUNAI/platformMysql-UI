@@ -1,0 +1,207 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.ant-pro-table-search {
+  margin-bottom: 24px;
+}
+
+/* 扩展ant design pro按钮组件颜色 start */
+.button-color-dust {
+  background-color: #F5222D;
+  border-color: #F5222D;
+
+  &:hover, &:focus {
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
+
+  &:active, &.active {
+    background-color: #cf1322;
+    border-color: #cf1322;
+  }
+}
+
+.button-color-volcano {
+  background-color: #FA541C;
+  border-color: #FA541C;
+
+  &:hover, &:focus {
+    background-color: #ff7a45;
+    border-color: #ff7a45;
+  }
+
+  &:active, &.active {
+    background-color: #d4380d;
+    border-color: #d4380d;
+  }
+}
+
+.button-color-sunset {
+  background-color: #FAAD14;
+  border-color: #FAAD14;
+
+  &:hover, &:focus {
+    background-color: #ffc53d;
+    border-color: #ffc53d;
+  }
+
+  &:active, &.active {
+    background-color: #d48806;
+    border-color: #d48806;
+  }
+}
+
+.button-color-cyan {
+  background-color: #13C2C2;
+  border-color: #13C2C2;
+
+  &:hover, &:focus {
+    background-color: #36cfc9;
+    border-color: #36cfc9;
+  }
+
+  &:active, &.active {
+    background-color: #08979c;
+    border-color: #08979c;
+  }
+}
+
+.button-color-green {
+  background-color: #52C41A;
+  border-color: #52C41A;
+
+  &:hover, &:focus {
+    background-color: #73d13d;
+    border-color: #73d13d;
+  }
+
+  &:active, &.active {
+    background-color: #389e0d;
+    border-color: #389e0d;
+  }
+}
+
+.button-color-daybreak {
+  background-color: #1890FF;
+  border-color: #1890FF;
+
+  &:hover, &:focus {
+    background-color: #096dd9;
+    border-color: #096dd9;
+  }
+
+  &:active, &.active {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+}
+
+.button-color-geekblue {
+  background-color: #2F54EB;
+  border-color: #2F54EB;
+
+  &:hover, &:focus {
+    background-color: #1d39c4;
+    border-color: #1d39c4;
+  }
+
+  &:active, &.active {
+    background-color: #597ef7;
+    border-color: #597ef7;
+  }
+}
+
+.button-color-purple {
+  background-color: #722ED1;
+  border-color: #722ED1 !important;
+
+  &:hover, &:focus {
+    background-color: #9254de;
+    border-color: #9254de !important;
+  }
+
+  &:active, &.active {
+    background-color: #531dab;
+    border-color: #531dab !important;
+  }
+}
+/* 扩展ant design pro按钮组件颜色 end */
+
+/* 自定义查询card 样式 start */
+.search-card {
+  :global {
+    .ant-card-body {
+      padding: 24px 16px 0 16px;
+    }
+    .ant-col {
+      padding: 4px 8px;
+    }
+    .ant-form-item-label {
+      min-width: 80px;
+      padding: 0;
+      text-align: right;
+    }
+    .ant-form-item-control {
+      padding: 0;
+    }
+  }
+
+  button {
+    float: right;
+    margin-left: 8px;
+  }
+}
+/* 自定义查询card 样式 end */

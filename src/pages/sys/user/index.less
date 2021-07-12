@@ -1,0 +1,50 @@
+@import '~antd/es/style/themes/default.less';
+
+.searchCard {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.listMeta {
+  :global {
+    .ant-avatar-lg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+.listContent {
+  font-size: 0;
+  .listContentItem {
+    display: inline-block;
+    margin-left: 80px;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+    vertical-align: middle;
+    > span {
+      line-height: 20px;
+    }
+    > p {
+      margin-top: 4px;
+      margin-bottom: 0;
+      line-height: 22px;
+    }
+  }
+}
+
+.listDesc {
+  .listSpan {
+    margin-right: 30px;
+  }
+}
+
+.avatar-uploader {
+  .ant-upload {
+    width: 128px;
+    height: 128px;
+  }
+}
